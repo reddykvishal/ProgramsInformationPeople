@@ -12,85 +12,59 @@
     :linenothreshold: 500
 
 
-Activities through 9/27
+Activities through 1/24
 =======================
 
 You have the following graded activities:
 
-* Before Monday's class, 9/21
+* **Before Tuesday 1/19 at midnight:** (Changed for clarity in retrospect: amnesty granted for W16 until 1/21 midnight)
+
+  * Answer `Reading Response 3 <https://umich.instructure.com/courses/48961/assignments/57678>`_ .
+
+* **Before Wednesday's class 1/20** (no class Monday for MLK Day):
 
   * Read :ref:`Sequences <sequences_chap>`, and do the exercises in that chapter.
-  * If you have a Windows machine, install the git bash command line. :ref:`Installing Git <install_git_bash>`
-  * Read :ref:`Command Prompt <command_prompt_sect>` section of the Unix chapter.
-  * Read :ref:`Folders and Paths <folders_and_paths_sect>` section of the Unix chapter and do the exercises in it.
-      
-* Before Wednesday's class, 9/23
-
-  * Read :ref:`Iteration<iteration_chap>`, and do the exercises in that chapter
   * Read :ref:`unix cat and less<less_chap>` section of the Unix chapter
 
-* By Sunday 9/27 at 5PM. Save answers to the exercises in Problem Set 2:
+  * Read chapter 2 of The Most Human Human.
 
-  * Do the Unix Problems part of the problem set: :ref:`Unix Problems (1) <unix_pset2>`
+.. usageassignment:: prep_04
+    :chapters: Sequences
+    :subchapters: Unix/lessCommand
+    :assignment_name: Prep 04
+    :deadline: 2016-01-20 19:40:00
+    :pct_required: 80
+    :points: 50
+
+* By **Sunday 1/24 at 5PM**, save answers to the exercises in **Problem Set 2**:
+
+  * Do the Unix Problems part of the problem set: :ref:`Unix Problems (2) <unix_pset2>` and upload the screenshots in Canvas, Assignments > Unix problems 2.
   * Save answers to each of the exercises in :ref:`Problem Set 2 <problem_set_2>`
 
-* By Sunday night, 9/27
-
-  * Read chapter 3 of The Most Human Human.
-  * Answer :ref:`Reading Response 4 <reading_response_4>`.
-
-
-.. _reading_response_4:
-
-Reading Response
-----------------
-
-If you had to give up either your left-brain functions or your right-brain functions, which would you give up? Is the one you wouldn't give up the "soul" of who you really are?
-
-.. activecode:: rr_4_1
-   :nocanvas:
-
-   # Fill in your answer on the lines between the triple quotes
-   s = """
-
-   """
-   print s
-
-
+* By **Sunday 1/24 at 6PM**, save your **Demonstrate Understanding** assignment for this week in Canvas.
 
 
 .. _unix_pset2:
 
-
 Unix Problems
 -------------
 
-The following problems include instructions for you to follow in your Terminal application, if you have a Mac, or in Git Bash, if you have Windows (:ref:`instructions for installing git bash <install_git_bash>`). Each one requires you to take a screenshot of the result and upload all these screenshots to **PS2 Unix Problems** on Canvas  > Assignments PS2 Unix Problems.
+The following problems include instructions for you to follow in your Terminal application, if you have a Mac, or in Git Bash, if you have Windows (:ref:`instructions for installing git bash <install_git_bash>`). Each one requires you to take a screenshot of the result and upload all these screenshots to **PS3 Unix Problems** on Canvas  > Assignments PS3 Unix Problems.
 
-To take a screenshot, 
+1. Create a folder ``ps2`` in your 106 directory. Download the file ``sample.txt`` from the Canvas Code directory and save it in your ``ps2`` directory.
 
-**Mac:** Press ``Control`` + ``Shift`` + ``4`` and drag to create a screenshot of the part of your screen you drag the window over. It will be saved to your Desktop.
+2. Connect to the ``ps2`` directory. Run the command ``less sample.txt``. Take a screenshot to show that the command worked for displaying the contents. Upload it to the Canvas assignment for **Unix problems 2**.
 
-**Windows:** Launch the program ``Snipping tools`` and use it to take a screen shot of all or part of the screen. **Please save it as a .JPG or .PNG file!**
-
-In the Mac Finder or Windows Explorer, create a folder called ``106``. You may create this folder on the Desktop, or anywhere in your directory system that you would like, following your usual way of organizing folders on your computer. Inside the 106 folder, create a subfolder called ``ps3``. Use a text editor to create a file called ``test.py``. It doesn't matter what text you put in the file.  
-
-#. Use the Finder or Windows Explorer to figure out what the full path is for the 106/ps3 folder. In a Terminal window (Mac) or git bash command window (Windows), use the ``cd`` command to go to your 106/ps3 folder. Then use the ``ls`` command to list all of the files in this directory, presumably just test.py unless you also added some other file. Then use the ``cd ..`` command to connect to the parent directory, 106, and use ``ls`` again to show what's in that directory. Finally, use ``cd ps3`` to go back to the ps3 directory. Take a screenshot of the window, showing a transcript of everything you typed and the responses, save it as ``unix_1.png`` or ``unix_1.jpg``, and upload it to CTools.
-
-#. Use the Unix commands you've learned in this chapter to go to your ``Desktop`` directory. Take a screenshot of the result that shows you've gotten to ``Desktop``, save it as ``unix_2.png`` or ``unix_2.jpg``, and upload it it to CTools.
-
-(Remember that you can find a lot of familiar things in your home directory... that's where Desktop directories are usually found, in most people's file systems!)
-   
 
 .. _problem_set_2:
 
 Problem Set
 -----------
-**Due:** **Sunday, Jnauary 25 at 5 pm**
+**Due:** **Sunday, January 24 at 5 pm**
 
 **Instructions:** Write the code you want to save in the provided boxes, and click **save** for each one. The last code you have saved for each one by the deadline is what will be graded.
 
-1. Assign the variable ``fl`` the value of the first element of the string value in ``original_str``. Use string indexing to assign the variable ``last_l`` the value of the last element of the string value in ``original_str``.
+1. Assign the variable ``fl`` the value of the first element of the string value in ``original_str``. Use string indexing to assign the variable ``last_l`` the value of the last element of the string value in ``original_str``. Write code so that will work no matter how long ``original_str``'s value is.
 
 .. activecode:: ps_2_1
  
@@ -135,10 +109,10 @@ Problem Set
    # Write code to assign the length of that string to a variable called short_len.
 
 
-   # Print out the value of short_len (and len_of_sent, if you want!) so you can see it. 
+   # Write code to print out the value of short_len (and the value of len_of_sent, if you want!) so you can see it. 
 
 
-   # Write a comment below this line to explain why these values are larger than you might expect. Why is the length of short_sent longer than 15 characters?
+   # Consider (ungraded but important): Why is the length of short_sent longer than 15 characters?
 
 
    # Assign the index of the first 'v' in the value of the variable sent TO a variable called index_of_v. (Hint: we saw a method of the string class that can help with this)
@@ -209,7 +183,7 @@ Problem Set
       print "The variable another_type has not been defined"
 
 
-4. There is a function we are giving you for this problem set that takes two strings, and returns the length of both of those strings added together, called ``add_lengths``. We are also including the functions from Problem Set 1 called ``random_digit`` and ``square`` in this problem set. 
+4. There is a function we are giving you for this problem set that takes two strings as inputs, and returns the length of both of those strings added together, called ``add_lengths``. We are also including the functions from Problem Set 1 called ``random_digit`` and ``square`` in this problem set. 
 
 Now, take a look at the following code and related questions, in this code window.
 
@@ -261,75 +235,11 @@ Now, take a look at the following code and related questions, in this code windo
    ====
 
    print "\n\nThere are no tests for this problem"
- 
-5. Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``.
+
+
+5. Write code to assign the number of characters in the string ``rv`` to a variable ``num_chars``. Then write code to assign the number of words in the string ``rv`` to the variable ``num_words``. (Hint: remember how to split strings?)
 
 .. activecode:: ps_2_5
-
-   several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
-
-   ====
-   import test
-   print "\n\n---\n"
-   print "(There are no tests for this problem.)"
-
-
-
-6. See the comments for directions.
-
-.. activecode:: ps_2_6
-
-    sent = "The magical mystery tour is waiting to take you away."
-
-    # Write a comment explaining how you would define what a word is for
-    # a computer.
-
-    # Write code that assigns a variable word_list to hold a LIST of all the
-    # WORDS in the string sent. It's fine if words include punctuation.
-    # Hint: remember how to split strings?
-
-    ====
-
-    import test
-    print "\n\n---\n"
-
-    try:
-        test.testEqual(word_list,sent.split())
-    except:
-        print "The variable word_list has not been defined"
-
-7. Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
-
-``hello``
-
-``goodbye``
-
-``wonderful``
-
-``I love Python``
-
-(Hint: remember string slicing?)
-
-
-.. activecode:: ps_2_7
-
-    excited_words = ["hello!", "goodbye!", "wonderful!", "I love Python?"]
-
-    # Now, write code that uses iteration to print out each element of the
-    # list stored in excited_words,
-    # BUT print out each element WITHOUT the ending punctuation.
-    # Hint: remember string slicing?
-
-    ====
-
-    import test
-    print "\n\n---\n"
-    print "(There are no tests for this problem.)"
-
-
-8. See the comments for directions.
-
-.. activecode:: ps_2_8
 
     rv = """Once upon a midnight dreary, while I pondered, weak and weary,
       Over many a quaint and curious volume of forgotten lore,
@@ -338,12 +248,7 @@ Now, take a look at the following code and related questions, in this code windo
       'Tis some visitor, I muttered, tapping at my chamber door;
       Only this and nothing more."""
 
-    # Write code to assign the number of characters in the string rv to
-    # the variable num_chars.
-
-    # Write code to assign the number of words in the string rv to the
-    # variable num_words.
-    ## Hint: remember how to split strings?
+    # Write your code here!
 
     ====
 
@@ -376,6 +281,3 @@ Now, take a look at the following code and related questions, in this code windo
       
    def add_lengths(str1, str2):
       return len(str1) + len(str2)
-
-   
-   

@@ -12,72 +12,62 @@
     :linenothreshold: 500
 
 
-Activities through 10/4
+Activities through 1/31
 =======================
 
 You have the following graded activities:
 
-* Before Monday's class, 9/28:
+* **Before Monday's class, 1/25:**
 
-  * :ref:`Conditionals <conditionals_chap>`
-  * :ref:`File Input/Output <files_chap>` (read the Selection/Conditionals chapter first, or you won't be able to do the last exercise...)
-  * :ref:`Understanding Code <understand_code_chap>`
-  * Read `External tutorial on unix <, >, and |  <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_
+  * Read :ref:`Iteration<iteration_chap>`, and do the exercises in that chapter
+  * Read :ref:`Folders and copying <mkdir_and_cp_sect>` about the Unix commands ``mkdir`` and ``cp``
 
-    * Note: If you're trying out the commands in the tutorial on your own machine, don't be alarmed by the *who* command that is used in one of the examples. It's not very intuitive what it's doing on a single-user computing system like a Mac, and it's not available all in git bash for Windows users.
-    * Note: you might also like some of the other pages in the tutorial at that site.
+.. usageassignment:: prep_05
+    :chapters: Iteration
+    :subchapters: Unix/DirectoriesAndCopying
+    :assignment_name: Prep 05
+    :deadline: 2016-01-25 19:40:00
+    :pct_required: 80
+    :points: 50
 
-* Before Wednesday's class 9/30:
+* **Before Tuesday 1/26 at midnight:**
 
-  * Read :ref:`Dictionaries<dictionaries_chap>`, and do the exercises in that chapter
-  * Read `External tutorial on unix grep  <http://www.uccs.edu/~ahitchco/grep/>`_
+  * Read Chapter 3 of the Most Human Human
+  * Answer `Reading Response 4 <https://umich.instructure.com/courses/48961/assignments/57679>`_ on Canvas.
 
-* By Sunday 10/4 at 5PM. Save answers to the exercises in :ref:`Problem Set 3 <problem_set_3>`. including :ref:`Unix Problems (2) <unix_pset3>`
+* **Before Wednesday's class, 1/27:**
+  
+  * Read :ref:`Conditionals <conditionals_chap>` and do exercises
+  * Read :ref:`File Input/Output <files_chap>` (read the Selection/Conditionals chapter first, or you won't be able to do the last exercise...)
+  * Read :ref:`Understanding Code <understand_code_chap>` and do exercises
 
-* By Sunday midnight 10/4:
+.. usageassignment:: prep_06
+    :chapters: Selection, Files
+    :subchapters: BuildingAProgram/UnderstandingCode
+    :assignment_name: Prep 06
+    :deadline: 2016-01-27 19:40:00
+    :pct_required: 80
+    :points: 50
 
-  * Read *The Most Human Human*, Chapter 5, "Getting out of Book"
-  * Answer :ref:`Reading Response 5 <reading_response_5>`.
+* **Before Sunday evening, 1/31:**
 
-Reading Response
-----------------
+  * Save answers to each of the exercises in :ref:`Problem Set 3 <problem_set_3>` and the exercises in :ref:`Unix Problems 3 <unix_pset3>` to Canvas by **5PM**
+  * Upload your **Demonstrate Understanding** assignment to Canvas by **6PM**
 
-.. _reading_response_5:
-
-Give an example of when you were interacting with someone where you used "book" responses. What's an example of a time when you or the person you were talking to got "out of book" unusually fast?
-
-.. activecode:: rr_5_1
-   :nocanvas:
-
-   # Fill in your answer on the lines between the triple quotes
-   s = """
-   """
-   print s
-
-Quick check-in. How are things going for you in this class so far? Feeling overwhelmed? Inspired? Bored?
-
-.. activecode:: rr_5_2
-   :nocanvas:
-
-   # Fill in your answer on the lines between the triple quotes
-   s = """
-   """
-   print s
-
-
-
-.. _problem_set_3:
 
 .. _unix_pset3:
 
 Unix Problems
 -------------
 
-The following problems include instructions for you to follow in your Terminal application, if you have a Mac, or in Git Bash, if you have Windows (:ref:`instructions for installing git bash <install_git_bash>`). Each one requires you to take a screenshot of the result and upload all these screenshots to **PS3 Unix Problems** on Canvas  > Assignments PS3 Unix Problems.
+1. Use the ``mkdir`` command and other Unix commands you've learned to create a folder called ``ps3`` inside your ``106`` folder. Use the ``cp`` command and other Unix commands you've learned as needed to copy ``sample.txt`` from the ``ps2`` folder into the ``ps3`` folder. Then use the ``mkdir`` command to make a sub-directory inside the ``ps3`` folder called ``inside_ps3``. Take a screenshot showing that you typed these commands and that they worked properly (you could use ``ls`` or ``pwd`` to show that they worked!), and upload it to **Unix problems 3** on Canvas.
 
-1. Create a folder ps3 in your 106 directory. Download the file ``sample.txt`` from the Canvas Code directory and save it in your ps3 directory.
+2. Use the ``cp`` command to copy all of the individual files inside ``106/ps1`` to your ``106/ps3`` directory. (You can't copy sub-directories without a special flag, but you can copy files! See the chapter you read.) 
 
-2. Connect to the ps3 directory. Run the command ``less sample.txt``. Take a screenshot to show that the command worked for displaying the contents. Upload it.
+After this, if you type ``ls`` in the ``ps3`` folder, you should see ``test.txt`` and ``sample.txt`` and the ``inside_ps3`` folder (unless you previously added more files to the ``ps1`` directory, in which case you should see those, too). Take a screenshot to show that you typed these commands and that they were successful. Upload it to **Unix problems 3** on Canvas.
+
+
+.. _problem_set_3:
 
 Problem Set
 -----------
@@ -116,21 +106,83 @@ Problem Set
    security clearance). However, representing oneself as a "professional software engineer"
    without a license from an accredited institution is illegal in many parts of the world.
 
+1. Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``.
+
+.. activecode:: ps_3_1
+
+   several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
+
+   ====
+   
+   import test
+   print "\n\n---\n"
+   print "(There are no tests for this problem.)"
+
+2. See the comments for directions.
+
+.. activecode:: ps_3_2
+
+    sent = "The magical mystery tour is waiting to take you away."
+
+    # The following code does not iterate over the words in the English sentence we can read that's stored in the variable sent:
+    for x in sent:
+      print x
+    # Why not? Knowing what you know about how computers and programming languages deal with sequences, what do you need to do to make sure you can iterate over the words in the sentence? Write a comment explaining:
 
 
-3. Write code to open the file we've included in this problem set, ``about_programming.txt``, and print it out, line by line. (Don't worry about the blank lines that will appear.)
+    # Write code that assigns a variable word_list to hold a LIST of all the
+    # WORDS in the string sent. It's fine if words include punctuation.
 
-The first two lines should look like this:
+
+    ====
+
+    import test
+    print "\n\n---\n"
+    print "No tests for the comment, of course -- we can only test stored values!\n"
+    try:
+        test.testEqual(word_list,sent.split())
+    except:
+        print "The variable word_list has not been defined"
+
+
+3. Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
+
+``hello``
+
+``goodbye``
+
+``wonderful``
+
+``I love Python``
+
+(Hint: remember string slicing?)
+
+.. activecode:: ps_3_3
+
+    excited_words = ["hello!", "goodbye!", "wonderful!", "I love Python?"]
+
+    # Write your code here.
+
+    ====
+
+    import test
+    print "\n\n---\n"
+    print "(There are no tests for this problem.)"
+
+
+4. Write code to open the file we've included in this problem set, ``about_programming.txt``, and print out each of the first two lines only. (Don't worry about blank lines appearing.) (Hint: use one of the file methods you've learned to make this easy!) Do not print out a list. 
+
+The result should look like this:
 
    Computer programming (often shortened to programming) is a process that leads from an
   
    original formulation of a computing problem to executable programs. It involves
 
-.. activecode:: ps_3_3
+.. activecode:: ps_3_4
        :available_files: about_programming.txt
 
        # Write your code here.
-       # Don't worry about extra blank lines between each of the lines
+       # Don't worry about extra blank lines between each of the lines when you print them
        # (but if you want to get rid of them, you can try out the .strip() method)
 
        ====
@@ -140,9 +192,9 @@ The first two lines should look like this:
        print "There are no tests for this problem."
 
 
-4. Now write code to open the file ``about_programming.txt`` and assign the **number of lines** in the file to the variable ``file_lines_num``.
+5. Write code to open the file ``about_programming.txt`` and assign the **number of lines** in the file to the variable ``file_lines_num``.
 
-.. activecode:: ps_3_4
+.. activecode:: ps_3_5
        :available_files: about_programming.txt
 
        # Write your code here.
@@ -157,9 +209,13 @@ The first two lines should look like this:
        except:
             print "The variable file_lines_num has not been defined"
 
-5. The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x; tests will run at the end of your code and you will get diagnostic error messages. Fix the code so that it passes the test for all the xs. (HINT: you don't have to make a big change.)
 
-.. activecode:: ps_3_5
+6. The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x. Tests will run at the end of your code, and you will get diagnostic error messages. 
+
+Fix the code so that it passes the test for each different value of x. So when the first line is uncommented, and when the second line, third line, and fourth line are each uncommented, you should always pass the test.
+(HINT: you don't have to make a big change.)
+
+.. activecode:: ps_3_6
 
     #x = 25
     #x = 15
@@ -200,9 +256,9 @@ The first two lines should look like this:
         print "Failed test. Probably y is not bound to a value."
 
 
-6. See comments in code for instructions.
+7. See comments in code for instructions.
 
-.. activecode:: ps_3_6
+.. activecode:: ps_3_7
 
    lp = ["hello","arachnophobia","lamplighter","inspirations","ice","amalgamation","programming","Python"]
 
@@ -222,7 +278,7 @@ The first two lines should look like this:
    # 6
 
    # Now write code to print out each element of
-   # list lp IF the length of the element is
+   # list lp only IF the length of the element is
    # an even number. Use iteration (a for loop!).
 
    ====
@@ -231,9 +287,9 @@ The first two lines should look like this:
    print "There are no tests for this problem."
 
 
-7. Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``. HINT 1: Use the accumulation pattern! HINT 2: the ``in`` operator checks whether a letter or substring is present in a string.
+8. Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``. HINT 1: Use the accumulation pattern! HINT 2: the ``in`` operator checks whether a letter or substring is present in a string.
 
-.. activecode:: ps_3_7
+.. activecode:: ps_3_8
 
    items = ["whirring", "calendar", "wry", "glass", "", "llama","tumultuous","owing"]
 
@@ -248,9 +304,9 @@ The first two lines should look like this:
 
 
 
-8. **Challenge problem (OPTIONAL, much harder):** write code to find the average (mean) number of words in each line of the file ``about_programming.txt``.
+9. **Challenge problem (OPTIONAL, much harder):** write code to find the average (mean) number of words in each line of the file ``about_programming.txt``.
 
-.. activecode:: ps_3_8
+.. activecode:: ps_3_9
     :available_files: about_programming.txt
 
     # Write your code here.

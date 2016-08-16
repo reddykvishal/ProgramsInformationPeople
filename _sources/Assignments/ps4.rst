@@ -11,68 +11,66 @@
 .. highlight:: python
     :linenothreshold: 500
 
-
-Activities through 10/11
-========================
-
+Activities through 2/7
+=======================
 
 You have the following graded activities:
 
+* **Before Monday's class, 2/1:**
 
-* Before Monday's class:
-    * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and do the exercises in that chapter
-    * Read :ref:`Strategy for building programs <build_program_chap>`
+  * Read `External tutorial on unix <, >, and |  <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_ and `External tutorial on unix grep  <http://www.uccs.edu/~ahitchco/grep/>`_.
+  * Note: If you're trying out the commands in the tutorial on your own machine, don't be alarmed by the *who* command that is used in one of the examples. It's not very intuitive what it's doing on a single-user computing system like a Mac, and it's not available all in git bash for Windows users.
+    
+    * Note: you might also like some of the other pages in the tutorial at that site.
 
-.. usageassignment:: prep_8
+  * Read :ref:`Dictionaries<dictionaries_chap>`, and do the exercises in that chapter
+
+.. usageassignment:: prep_07
+    :chapters: Dictionaries
+    :assignment_name: Prep 07
+    :deadline: 2016-02-01 19:40:00
+    :pct_required: 80
+    :points: 50
+
+
+* **By Tuesday midnight, 2/2:**
+
+  * Read chapter 5 of The Most Human Human
+  * Answer `Reading Response 5 <https://umich.instructure.com/courses/48961/assignments/57680>`_ on Canvas.
+
+* **Before Wednesday's class, 2/3:**
+
+  * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and do the exercises in that chapter
+  * Read :ref:`Strategy for building programs <build_program_chap>`
+
+.. usageassignment:: prep_08
     :chapters: DictionaryAccumulation
     :subchapters: BuildingAProgram/TheStrategy
-    :assignment_name: Prep 8
-    :deadline: 2015-10-05 21:30:00
+    :assignment_name: Prep 08
+    :deadline: 2016-02-03 19:40:00
     :pct_required: 80
     :points: 50
 
-* Before Wednesday's class:
-    * Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
+* **By Sunday evening, 2/7:**
+  
+  * Save answers to each of the exercises in :ref:`Problem Set 4 <problem_set_4>` and the exercises in :ref:`Unix Problems 4 <unix_pset4>` to Canvas by **5PM**
+  * Upload your **Demonstrate Understanding** assignment to Canvas by **6PM**
 
-.. usageassignment:: prep_9
-    :chapters: Functions
-    :assignment_name: Prep 9
-    :deadline: 2015-10-07 21:30:00
-    :pct_required: 80
-    :points: 50
+Unix Problems
+-------------
 
-* By Sunday 10/11 at 5PM.
-    * Save answers to the exercises in :ref:`Problem Set 4 <problem_set_4>`.
+.. _unix_pset4:
 
-* By Sunday midnight 10/11:
-    * Read *The Most Human Human*, Chapter 10, p.219-237 only (you'll read the rest of the chapter next week). Note: we are skipping some of the other chapters.
-    * Answer :ref:`Reading Response 6 <reading_response_6>`.
+Turn these in as screenshots showing you've done these things via Canvas > Assignments > Unix problems 4.
 
+1. In the `tutorial on unix <, >, and |  <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_,  there are instructions for creating two files called  ``list1`` and ``list2``. Write a single unix command that displays all lines in either file that contain the letter ``p``.
 
-Reading Response
-----------------
-
-.. _reading_response_6:
-
-1. Compare a conversation that "stays in book" to one that doesn't. Which has more surprisal? Which would be easier to compress?
-2. Give an example of compression other than the ones Christian addresses. Explain. Why? In what situations does this occur?
-
-.. activecode:: rr_6_1
-
-   # Fill in your response in between the triple quotes
-   s = """
-
-   """
-   print s
-
-
+2. Save a file in the ``106`` folder you created a couple weeks ago called ``fun_with_unix.txt``. Now use ``ls``, ``|`` (pipe), and ``grep`` to find all filenames in your folder containing the string ``unix``. (For fun, try this with other substrings and other folders.)
 
 .. _problem_set_4:
 
 Problem Set
 -----------
-
-
 
 .. datafile::  about_programming.txt
    :hide:
@@ -111,13 +109,13 @@ Problem Set
 **Note:** Passing tests for a problem (``Pass``) does not ensure that the problem is 100% correct -- we can only test some things, to provide a bit of feedback as you go.
 
 
-1. Old McDonald had a farm. He records the animals on his farm in a dictionary called 'animals'. See comments for instructions...
+1. Old McDonald had a farm. He records the animals on his farm in a dictionary called 'animals'. See comments for additional instructions...
 
 .. activecode:: ps_4_1
 
    animals = {'cows': 2, 'chickens': 8, 'pigs': 4, 'mice': 72, 'cats': 9,'dogs': 1}
 
-	# Write code to look up the number of chickens
+   # Write code to look up the number of chickens
    # Old McDonald recorded and assign it to the 
    # variable num_chickens. 
    # (Do not hard-code values! num_chickens = 8 will not earn points.)
@@ -126,7 +124,7 @@ Problem Set
    # to the dictionary stored in the variable called animals.
 
    # Write code to increase the value for the key 
-   # "dogs" in the animals dictionary we've provided) by 1.
+   # "dogs" (in the animals dictionary we've provided) by 1.
 
    ====
    
@@ -134,25 +132,25 @@ Problem Set
    try: 
       test.testEqual(num_chickens, animals['chickens'])
    except:
-      print "either num_chickens or animal['chickens'] is undefined"
+      print "Something is is undefined so this test cannot run. Read the directions again!\n"
 
    try:
       test.testEqual(animals['yak'], 3)
    except:
-      print "key 'yak' is not set in dictionary num_chickens"
+      print "key 'yak' is not yet set in dictionary animals"
       
    test.testEqual(animals['dogs'], 2)
 
 
 
-2. Here's another dictionary. Write code to print out each key-value pair in it. Then follow the rest of the instructions in the comments.
+2. Here's another dictionary. Write code to print out each key-value pair in it, one key and its value on each line. Then follow the rest of the instructions in the comments.
 
 .. activecode:: ps_4_2
 
    nd = {"autumn":"spring", "well":"spring", "4":"seasons","23":345}
    
-   # Use a for looop to print out each key-value pair. 
-   # Remember that printing things with a comma, e.g.
+   # Use a for loop to print out each key-value pair. 
+   # Hint to make this easier: printing things with a comma, e.g.
    # print "hello", "everyone" 
    # will print out those things on the same 
    # line with a space in between them.
@@ -166,10 +164,14 @@ Problem Set
    # well spring
    
    # Now, write code to increase the 
-   # value of key "23" by 5
+   # value of key "23" by 5. Your code should work 
+   # no matter what the value of the key "23" is,
+   # as long as its value is an integer.
    
    # Now, write code to print the 
    # value of the key "well".
+   # Your code should work no matter 
+   # what the value of the key "well" is.
    
    ====
    
@@ -181,88 +183,59 @@ Problem Set
       print "nd doesn't exist or doesn't have the key '23'"
 
 
-3. We've included the same file in this problem set that we included in the last problem set -- ``about_programming.txt``. Write code to open the file and print out each line in the file that has a "program"-based word (any of the words ``program``, ``programs``, ``programming``, ``programmer``, or ``programmers``...) in it.
+3. We've included the same file in this problem set that we included in the last problem set -- ``about_programming.txt``. Write code to open the file and print out each line in the file that has the string ``program`` in it. (Note that each line with the string ``program`` in it should only print out once, even if the string ``program`` occurs in it more than once.) Then, write code (or edit the code that you already wrote!) to accumulate a list of the lines in the file that include the string ``program``. Save that list in a variable ``program_lines``.
 
 .. activecode:: ps_4_3
-    :available_files: about_programming.txt
-
-  	 # Write your code here!
-
-    ====
-
-    print "\n---\n\n"
-    print "There are no tests for this problem"
-
-4. Define a function called add_three, which takes one integer as input and returns that integer + 3.
-
-.. activecode:: ps_4_4
-
-    # Write your code here.
-    # (The tests for this problem are going to try to CALL the function that you write!)
-
-    ====
-
-    import test
-    try:
-      print "testing if add_three(2) equals 5"
-      test.testEqual(add_three(2),5)
-      print "testing if add_three(33) equals 36"
-      test.testEqual(add_three(33),36)
-    except:
-      print "The function add_three has not been defined yet, OR it hasn't been defined properly"
-
-5. Take a look at the code below. The function subtract_five is supposed to take one integer as input and return that integer - 5. You'll get an error if you run it as is. Change it so it works!
-
-.. activecode:: ps_4_5
-
-   def subtract_five(inp)
-   	print inp - 5
-	return None
-
-   y = subtract_five(9) - 6
+   :available_files: about_programming.txt
+  
+   # Write your code here!
 
    ====
 
+   import test
+   print "\n---\n\n"
+   tmp = []
+   for l in open("about_programming.txt").readlines():
+     if "program" in l:
+       tmp.append(l)
+   try:
+     test.testEqual(program_lines,tmp)
+   except:
+     print "program_lines has not been defined, or you have another error"
+
+
+4. Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
+
+.. activecode:: ps_4_4
+
+  nums = {}
+  num_words = ["two","three","four","seventeen","eight","not_a_number"]
+  # Write your code here.
+
+  ====
+
+  import test
+  try:
+    test.testEqual(nums["two"],0)
+    test.testEqual(type(nums["seventeen"]),type(3))
+    test.testEqual(nums,{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0})
+  except:
+    print "You've created an error somewhere or have not completed this problem."
+
+5. Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
+
+.. activecode:: ps_4_5
+
+   s = "Number of slams in an old screen door depends upon how loud you shut it, the count of slices in a bread depends how thin you cut it, and amount 'o good inside a day depends on how well you live 'em. All depends, all depends, all depends on what's around ya."
+
+   # Write your code here.
+    
+   ====
+    
    print "\n---\n\n"
    import test
+   print "testing whether abc is set correctly"
    try:
-    print "testing if y is -2"
-    test.testEqual(y, -2)
+     test.testEqual(abc, 'depends')
    except:
-    print "The variable y was deleted or is not defined"
-
-6. Here's another bit of code with a problem. Also, add comments about what's going on with the current code that causes a problem. Then, fix it so it calls change_amounts on some input and prints out the results.
-
-.. activecode:: ps_4_6
-
-    def change_amounts(yp):
-	n = yp - 4
-	return n * 7
-
-    print yp
-
-    ====
-
-    print "\n---\n\n"
-    print "There are no tests for this problem"
-
-
-7. Define a function called change_amounts that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
-
-.. activecode:: ps_4_7
-
-    # We've started you off with the first line...
-    def change_amounts(num_here):
-       pass # delete this line and put in your own code for the body of the function.
-
-    ====
-
-    print "\n---\n\n"
-    import test
-    try:
-      print "testing if change_amounts(9) equals 11"
-      test.testEqual(change_amounts(9),11)
-      print "testing if change_amounts(12) equals 17"
-      test.testEqual(change_amounts(12),17)
-    except:
-      print "The function change_amounts has not been defined properly"
+     print "The variable abc has not been defined and/or there is another error"

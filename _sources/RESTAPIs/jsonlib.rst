@@ -12,9 +12,9 @@ Processing JSON results
 
 JSON stands for JavaScript Object Notation. It looks a lot like the representation of nested dictionaries and lists in python when we write them out as literals in a program, but with a few small differences (e.g., the word null instead of None). When your program receives a JSON-formatted string, generally you will want to convert it into a python object, a list or a dictionary.
 
-Again, python provides a module for doing this. The module is called json. We will be using two functions in this module, loads and dumps.
+Again, python provides a module for doing this. The module is called json. We will be using two functions in this module, ``loads`` and ``dumps``.
 
-json.loads() take a string as input and produces a python object (a dictionary or a list) as output.
+``json.loads()`` takes a string as input and produces a python object (a dictionary or a list) as output.
 
 Consider, for example, the FAA's REST API. If we request 
 
@@ -75,7 +75,7 @@ You should get a result like this (your temperature may vary!)
    Detroit
    39.0 F (3.9 C)
    
-The other function we will use is dumps. It does the inverse of loads. It takes a python object, typically a dictionary or a list, and returns a string, in JSON format. It has a few other parameters. Two useful parameters are sort_keys and indent. When the value True is passed for the sort_keys parameter, the keys of dictionaries are output in alphabetic order with their values. The indent parameter expects an integer. When it is provided, dumps generates a string suitable for displaying to people, with newlines and indentation for nested lists or dictionaries. For example, the following function uses json.dumps to make a human-readable printout of a nested data structure. In fact, I used it to generate the printout above of the data about conditions at the Detroit airport.
+The other function we will use is ``dumps``. It does the inverse of ``loads``. It takes a python object, typically a dictionary or a list, and returns a string, in JSON format. It has a few other parameters. Two useful parameters are sort_keys and indent. When the value True is passed for the sort_keys parameter, the keys of dictionaries are output in alphabetic order with their values. The indent parameter expects an integer. When it is provided, dumps generates a string suitable for displaying to people, with newlines and indentation for nested lists or dictionaries. For example, the following function uses json.dumps to make a human-readable printout of a nested data structure. In fact, I used it to generate the printout above of the data about conditions at the Detroit airport.
 
 .. sourcecode:: python
 
