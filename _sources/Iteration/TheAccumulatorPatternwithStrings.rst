@@ -10,15 +10,15 @@
 The Accumulator Pattern with Strings
 ------------------------------------
 
-We can also accumulate strings rather than accumulating numbers. The following "stuttering" program 
-isn't very useful, but we will see more useful things later that accumulate strings.
+We can also accumulate strings rather than accumulating numbers. The following program 
+isn't particularly useful for data processing, but we will see more useful things later that accumulate strings.
 
 .. activecode:: ch08_acc1
     
    s = raw_input("Enter some text")
    ac = ""
    for c in s:
-      ac = ac + c + "-" + c + "-"
+       ac = ac + c + "-" + c + "-"
        
    print ac
  
@@ -34,14 +34,14 @@ everywhere in the above code).
 
 **Check your understanding**
 
-.. mchoicemf:: test_question8_11_1
+.. mchoice:: test_question8_11_1
    :answer_a: Ball
    :answer_b: BALL
    :answer_c: LLAB
-   :correct: c
    :feedback_a: Each item is converted to upper case before concatenation.
    :feedback_b: Each character is converted to upper case but the order is wrong.
    :feedback_c: Yes, the order is reversed due to the order of the concatenation.
+   :correct: c
 
    What is printed by the following statements:
    
