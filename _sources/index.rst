@@ -15,13 +15,12 @@
 Table of Contents
 :::::::::::::::::
 
-Assignments
-:::::::::::
+.. raw:: html
 
-.. toctree::
-   :maxdepth: 1
+   <ul>
+   <li><a href="/runestone/assignments/chooseAssignment.html">Assignments</a></li>
+   </ul>
 
-   assignments.rst
 
 General Introduction
 ::::::::::::::::::::
