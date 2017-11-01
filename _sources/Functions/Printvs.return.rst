@@ -77,6 +77,7 @@ until it makes sense to you!
 **Check your understanding**
 
 .. mchoice:: test_questionfunctions_4_1
+   :spacedrepetition: True
    :answer_a: 2
    :answer_b: 5
    :answer_c: 7
@@ -106,6 +107,7 @@ until it makes sense to you!
 
 
 .. mchoice:: test_questionfunctions_4_2
+   :spacedrepetition: True
    :answer_a: 2
    :answer_b: 5
    :answer_c: 7
