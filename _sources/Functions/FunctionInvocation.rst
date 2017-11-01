@@ -68,6 +68,7 @@ executed a second time.
 **Check your understanding**
 
 .. mchoice:: test_questionfunctions_1_1
+   :spacedrepetition: True
    :answer_a: A named sequence of statements.
    :answer_b: Any sequence of statements.
    :answer_c: A mathematical expression that calculates a value.
@@ -82,6 +83,7 @@ executed a second time.
 
 
 .. mchoice:: test_questionfunctions_1_2
+   :spacedrepetition: True
    :answer_a: To improve the speed of execution
    :answer_b: To help the programmer organize programs into chunks that match how they think about the solution to the problem.
    :answer_c: All Python programs must be written using functions
@@ -96,6 +98,7 @@ executed a second time.
 
 
 .. mchoice:: test_questionfunctions_1_2a
+   :spacedrepetition: True
    :answer_a: 0
    :answer_b: 1
    :answer_c: 2
@@ -114,6 +117,7 @@ executed a second time.
 
 
 .. mchoice:: test_questionfunctions_1_2b
+   :spacedrepetition: True
    :answer_a: 0
    :answer_b: 1
    :answer_c: 3
