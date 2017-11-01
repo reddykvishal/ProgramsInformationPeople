@@ -104,6 +104,7 @@ provided. The second parameter name is bound to the second value provided. And s
 **Check your understanding**
 
 .. mchoice:: test_questionfunctions_1_3
+   :spacedrepetition: True
    :answer_a: def greet(t):
    :answer_b: def greet:
    :answer_c: greet(t, n):
@@ -117,6 +118,7 @@ provided. The second parameter name is bound to the second value provided. And s
    Which of the following is a valid function header (first line of a function definition)?
 
 .. mchoice:: test_questionfunctions_1_4
+   :spacedrepetition: True
    :answer_a: def print_many(x, y):
    :answer_b: print_many
    :answer_c: print_many(x, y)
@@ -139,6 +141,7 @@ provided. The second parameter name is bound to the second value provided. And s
 
 
 .. mchoice:: test_questionfunctions_1_5
+   :spacedrepetition: True
    :answer_a: i
    :answer_b: x
    :answer_c: x, y
@@ -161,6 +164,7 @@ provided. The second parameter name is bound to the second value provided. And s
 
 
 .. mchoice:: test_questionfunctions_1_6
+   :spacedrepetition: True
    :answer_a: print_many(x, y)
    :answer_b: print_many
    :answer_c: print_many("Greetings")
@@ -185,6 +189,7 @@ provided. The second parameter name is bound to the second value provided. And s
       z = 3
 
 .. mchoice:: test_questionfunctions_1_7
+   :spacedrepetition: True
    :answer_a: True
    :answer_b: False
    :feedback_a: Yes, you can call a function multiple times by putting the call in a loop.
@@ -194,6 +199,7 @@ provided. The second parameter name is bound to the second value provided. And s
    True or false: A function can be called several times by placing a function call in the body of a for loop.
 
 .. mchoice:: test_questionfunctions_1_8
+   :spacedrepetition: True
    :answer_a: Hello
    :answer_b: Goodbye
    :answer_c: s1
