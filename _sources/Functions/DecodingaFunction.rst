@@ -76,6 +76,7 @@ with any variable, including a function parameter. If you see...
 **Check your understanding: decode this function definition**
 
 .. mchoice:: test_questionfunctions_3_1
+   :spacedrepetition: True
    :answer_a: 0
    :answer_b: 1
    :answer_c: 2
@@ -100,6 +101,7 @@ with any variable, including a function parameter. If you see...
             return x + 3
          
 .. mchoice:: test_questionfunctions_3_2
+   :spacedrepetition: True
    :multiple_answers:
    :answer_a: integer
    :answer_b: float
@@ -125,6 +127,7 @@ with any variable, including a function parameter. If you see...
             return x + 3
          
 .. mchoice:: test_questionfunctions_3_3
+   :spacedrepetition: True
    :multiple_answers:
    :answer_a: integer
    :answer_b: float
@@ -150,6 +153,7 @@ with any variable, including a function parameter. If you see...
             return x + 3
 
 .. mchoice:: test_questionfunctions_3_4
+   :spacedrepetition: True
    :multiple_answers:
    :answer_a: integer
    :answer_b: float
