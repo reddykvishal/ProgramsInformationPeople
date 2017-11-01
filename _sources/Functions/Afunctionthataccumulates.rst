@@ -36,7 +36,7 @@ and our implementation may not be a very good one.
 
 
 .. parsonsprob:: functions_6a
-
+   :spacedrepetition: True
    Rearrange the code statements to match the activecode window above. (This is an exercise in noticing where the indenting and outdenting happens, and where the return statement goes.)
    
    -----
