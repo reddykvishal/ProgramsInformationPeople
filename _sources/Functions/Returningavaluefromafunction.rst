@@ -180,6 +180,7 @@ interpreter does these steps:
 **Check your understanding**
 
 .. mchoice:: test_questionfunctions_2_1
+   :spacedrepetition: True
    :answer_a: You should never use a print statement in a function definition.
    :answer_b: You should not have any statements in a function after the return statement.  Once the function gets to the return statement it will immediately stop executing the function.
    :answer_c: You must calculate the value of x+y+z before you return it.
@@ -200,6 +201,7 @@ interpreter does these steps:
 
 
 .. mchoice:: test_questionfunctions_2_2
+   :spacedrepetition: True
    :answer_a: The value None
    :answer_b: The value of x+y+z
    :answer_c: The string 'x+y+z'
@@ -216,6 +218,7 @@ interpreter does these steps:
         print x+y+z
 
 .. mchoice:: test_questionfunctions_2_3
+   :spacedrepetition: True
    :answer_a: 25
    :answer_b: 50
    :answer_c: 25 + 25
@@ -236,6 +239,7 @@ interpreter does these steps:
        print square(5) + square(5)
 
 .. mchoice:: test_questionfunctions_2_4
+   :spacedrepetition: True
    :answer_a: 8
    :answer_b: 16
    :answer_c: Error: can't put a function invocation inside parentheses
@@ -255,6 +259,7 @@ interpreter does these steps:
        print square(square(2))
 
 .. mchoice:: test_questionfunctions_2_5
+   :spacedrepetition: True
    :answer_a: 1
    :answer_b: Yes
    :answer_c: First one was longer
@@ -283,6 +288,7 @@ interpreter does these steps:
            print "Second one was at least as long"
  
 .. mchoice:: test_questionfunctions_2_6
+   :spacedrepetition: True
    :answer_a: square
    :answer_b: g
    :answer_c: a number
@@ -306,6 +312,7 @@ interpreter does these steps:
        print square(g(2))
 
 .. mchoice:: test_questionfunctions_2_7
+   :spacedrepetition: True
    :answer_a: 3
    :answer_b: 2
    :answer_c: None
