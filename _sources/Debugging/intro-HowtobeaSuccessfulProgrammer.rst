@@ -58,6 +58,7 @@ So far so good.  Now lets take the next step.  We need to figure out what the ti
 Hmm, when you run that example you see that something funny has happened.
 
 .. mchoice:: db_q_ex3_1
+   :spacedrepetition: True
    :answer_a: Python is stupid and does not know how to add properly.
    :answer_b: There is nothing wrong here.
    :answer_c: Python is doing string concatenation, not integer addition.
