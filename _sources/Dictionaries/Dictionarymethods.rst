@@ -113,6 +113,7 @@ in the case where the key is not present.  This can be seen in the final example
 
    
 .. mchoice:: test_question11_3_2
+   :spacedrepetition: True
    :answer_a: 2
    :answer_b: 0.5
    :answer_c: bear
@@ -135,6 +136,7 @@ in the case where the key is not present.  This can be seen in the final example
    
    
 .. mchoice:: test_question11_3_3
+   :spacedrepetition: True
    :answer_a: True
    :answer_b: False
    :feedback_a: Yes, dog is a key in the dictionary.
@@ -151,6 +153,7 @@ in the case where the key is not present.  This can be seen in the final example
 
 
 .. mchoice:: test_question11_3_4
+   :spacedrepetition: True
    :answer_a: True
    :answer_b: False
    :feedback_a: 23 is a value in the dictionary, not a key.  
@@ -167,6 +170,7 @@ in the case where the key is not present.  This can be seen in the final example
 
 
 .. mchoice:: test_question11_3_5
+   :spacedrepetition: True
    :answer_a: 18
    :answer_b: 43
    :answer_c: 0
