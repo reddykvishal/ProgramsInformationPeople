@@ -90,6 +90,7 @@ The key ``'two'`` yields the value ``'dos'``. The key ``one`` yields the value `
 **Check your understanding**
 
 .. mchoice:: test_question11_1_1 
+   :spacedrepetition: True
    :answer_a: False
    :answer_b: True
    :feedback_a: Dictionaries associate keys with values but there is no assumed order for the entries.
@@ -100,6 +101,7 @@ The key ``'two'`` yields the value ``'dos'``. The key ``one`` yields the value `
 
 
 .. mchoice:: test_question11_1_2
+   :spacedrepetition: True
    :answer_a: 12
    :answer_b: 6
    :answer_c: 23
