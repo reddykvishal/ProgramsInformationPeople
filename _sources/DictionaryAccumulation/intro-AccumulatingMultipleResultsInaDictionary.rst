@@ -163,6 +163,7 @@ counts for all letters, not just 's' and 't'.
 **Check your understanding**
 
 .. mchoice:: test_question_string_accum_1
+   :spacedrepetition: True
    :answer_a: print txt['e'] > txt['t']
    :answer_b: print x['e'] > x['t']
    :answer_c: print x[e] > x[t]
