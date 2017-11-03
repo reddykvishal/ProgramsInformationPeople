@@ -42,6 +42,7 @@ Let's try the program again, but this time in an activecode window:
 Aha!  Now we have an error message that might be useful.  The name error tells us that  ``wait_time_int`` is not defined.  It also tells us that the error is on line 5.  That's **really** useful information.  Now look at line five and you will see that ``wait_time_int`` is used on both the left and the right hand side of the assignment statement. 
 
 .. mchoice:: db_qex32
+   :spacedrepetition: True
    :answer_a: You cannot use a variable on both the left and right hand sides of an assignment statement.
    :answer_b: wait_time_int does not have a value so it cannot be used on the right hand side.
    :answer_c: This is not really an error, Python is broken.
@@ -89,6 +90,7 @@ Usually ParseErrors can be traced back to missing punctuation characters, such a
 Here are a couple examples of Parse errors in the example program we have been using.  See if you can figure out what caused them.
 
 .. tabbed:: db_tabs1
+   :spacedrepetition: True
 
     .. tab:: Question
 
@@ -125,6 +127,7 @@ Here are a couple examples of Parse errors in the example program we have been u
 
 
 .. tabbed:: db_tabs2
+   :spacedrepetition: True
 
     .. tab:: Question
 
@@ -167,6 +170,7 @@ when you put your cursor to left of a ``)``, it changes the color of that parent
 you put the cursor to the left of ``(``. But check what happens if the ``(`` has no matching ``)``.
 
 .. mchoice:: db_qex33
+   :spacedrepetition: True
    :answer_a: Nothing. The program has a syntax error and can't run.
    :answer_b: The left parenthesis turns green.
    :answer_c: The left parenthesis turns red.
